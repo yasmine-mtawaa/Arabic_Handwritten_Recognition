@@ -1,0 +1,13 @@
+.git
+.gitignore
+node_modules
+vendor
+uploads/
+*.pyc
+*.log
+*.tmp
+*.cache
+*.md
+.DS_Store
+python_debug
+python_errors

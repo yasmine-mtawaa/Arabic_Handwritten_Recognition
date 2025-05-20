@@ -1,0 +1,301 @@
+[2025-05-14 18:49:52,269] ERROR: Erreur d'import PIL: No module named 'PIL.Image'; 'PIL' is not a package
+[2025-05-14 18:49:53,519] ERROR: Erreur d'import PIL: No module named 'PIL.Image'; 'PIL' is not a package
+[2025-05-14 18:49:54,004] ERROR: Erreur d'import PIL: No module named 'PIL.Image'; 'PIL' is not a package
+[2025-05-14 19:06:19.556470] === Démarrage du script ===
+[2025-05-14 19:06:19.556470] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824db9b790dc.png']
+[2025-05-14 19:06:19.556470] Importation des bibliothèques...
+[2025-05-14 19:06:23.521646] ERREUR: AttributeError: cannot access submodule 'Image' of module 'PIL' (most likely due to a circular import)
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\web/recognize.py", line 21, in <module>
+    from tensorflow.keras.models import load_model
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\keras\__init__.py", line 6, in <module>
+    from keras.api import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\__init__.py", line 2, in <module>
+    from keras.api import DTypePolicy
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\api\__init__.py", line 8, in <module>
+    from keras.api import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\api\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\activations\__init__.py", line 3, in <module>
+    from keras.src.activations.activations import celu
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\activations\activations.py", line 1, in <module>
+    from keras.src import backend
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\__init__.py", line 10, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\variables.py", line 12, in <module>
+    from keras.src.utils.naming import auto_name
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\__init__.py", line 4, in <module>
+    from keras.src.utils.image_dataset_utils import image_dataset_from_directory
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\image_dataset_utils.py", line 6, in <module>
+    from keras.src.utils import image_utils
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\image_utils.py", line 13, in <module>
+    from PIL import Image as pil_image
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 43, in <module>
+    import defusedxml.ElementTree as ElementTree
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\defusedxml\ElementTree.py", line 12, in <module>
+    from xml.etree.ElementTree import ParseError
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py", line 7, in <module>
+    import torchvision.transforms as transforms
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\__init__.py", line 10, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\__init__.py", line 1, in <module>
+    from ._optical_flow import FlyingChairs, FlyingThings3D, HD1K, KittiFlow, Sintel
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\_optical_flow.py", line 14, in <module>
+    from .folder import default_loader
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\folder.py", line 260, in <module>
+    def pil_loader(path: Union[str, Path]) -> PIL.Image.Image:
+                                              ^^^^^^^^^
+AttributeError: cannot access submodule 'Image' of module 'PIL' (most likely due to a circular import)
+
+[2025-05-14 19:11:51.285539] === Démarrage du script ===
+[2025-05-14 19:11:51.285539] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824dce7358b1.png']
+[2025-05-14 19:11:51.285539] Importation des bibliothèques...
+[2025-05-14 19:11:55.185476] ERREUR: AttributeError: partially initialized module 'PIL.Image' has no attribute 'Image' (most likely due to a circular import)
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\web/recognize.py", line 21, in <module>
+    from tensorflow.keras.models import load_model
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\_tf_keras\keras\__init__.py", line 6, in <module>
+    from keras.api import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\__init__.py", line 2, in <module>
+    from keras.api import DTypePolicy
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\api\__init__.py", line 8, in <module>
+    from keras.api import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\api\activations\__init__.py", line 7, in <module>
+    from keras.src.activations import deserialize
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\__init__.py", line 1, in <module>
+    from keras.src import activations
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\activations\__init__.py", line 3, in <module>
+    from keras.src.activations.activations import celu
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\activations\activations.py", line 1, in <module>
+    from keras.src import backend
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\__init__.py", line 10, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\__init__.py", line 2, in <module>
+    from keras.src.backend.common.dtypes import result_type
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\dtypes.py", line 5, in <module>
+    from keras.src.backend.common.variables import standardize_dtype
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\backend\common\variables.py", line 12, in <module>
+    from keras.src.utils.naming import auto_name
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\__init__.py", line 4, in <module>
+    from keras.src.utils.image_dataset_utils import image_dataset_from_directory
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\image_dataset_utils.py", line 6, in <module>
+    from keras.src.utils import image_utils
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\utils\image_utils.py", line 13, in <module>
+    from PIL import Image as pil_image
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\PIL\Image.py", line 43, in <module>
+    import defusedxml.ElementTree as ElementTree
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\defusedxml\ElementTree.py", line 12, in <module>
+    from xml.etree.ElementTree import ParseError
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py", line 7, in <module>
+    import torchvision.transforms as transforms
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\__init__.py", line 10, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils  # usort:skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\__init__.py", line 1, in <module>
+    from ._optical_flow import FlyingChairs, FlyingThings3D, HD1K, KittiFlow, Sintel
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchvision\datasets\_optical_flow.py", line 18, in <module>
+    T1 = Tuple[PilImage.Image, PilImage.Image, Optional[np.ndarray], Optional[np.ndarray]]
+               ^^^^^^^^^^^^^^
+AttributeError: partially initialized module 'PIL.Image' has no attribute 'Image' (most likely due to a circular import)
+
+[2025-05-14 19:48:21.502532] === Démarrage du script ===
+[2025-05-14 19:48:21.502532] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824e5754c17c.png']
+[2025-05-14 19:48:21.502532] PIL importé avec succès
+[2025-05-14 19:48:31.050075] Bibliothèques principales importées
+[2025-05-14 19:48:31.050075] Traitement de l'image: D:\xampp\htdocs\web\uploads\img_6824e5754c17c.png
+[2025-05-14 19:48:31.050075] Lecture de l'image...
+[2025-05-14 19:48:31.050075] Prétraitement...
+[2025-05-14 19:48:31.050075] Chargement du modèle...
+[2025-05-14 19:48:31.319344] Prédiction...
+[2025-05-14 19:48:31.590974] Résultat: {'text': 'أت'}
+[2025-05-14 19:54:05.868507] === Démarrage du script ===
+[2025-05-14 19:54:05.868507] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824e6cdbeb1f.png']
+[2025-05-14 19:54:05.868507] Importation des bibliothèques...
+[2025-05-14 19:54:14.499823] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824e6cdbeb1f.png
+[2025-05-14 19:54:14.500898] Lecture de l'image...
+[2025-05-14 19:54:14.503131] Prétraitement...
+[2025-05-14 19:54:14.503131] Chargement du modèle...
+[2025-05-14 19:54:14.836296] Prédiction...
+[2025-05-14 19:54:15.192383] Résultat: {'text': 'أت'}
+[2025-05-14 20:03:54.967315] === Démarrage du script ===
+[2025-05-14 20:03:54.967315] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824e91ad9f4e.png']
+[2025-05-14 20:03:54.967315] Importation des bibliothèques...
+[2025-05-14 20:03:58.719245] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824e91ad9f4e.png
+[2025-05-14 20:03:58.719245] Lecture de l'image...
+[2025-05-14 20:03:58.720245] Prétraitement...
+[2025-05-14 20:03:58.720245] Chargement du modèle...
+[2025-05-14 20:03:58.890958] Prédiction...
+[2025-05-14 20:03:59.047379] Résultat: {'text': 'أت'}
+[2025-05-14 20:03:59.048380] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:07:54.892457] === Démarrage du script ===
+[2025-05-14 20:07:54.892457] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ea0ac7fc6.png']
+[2025-05-14 20:07:54.892457] Importation des bibliothèques...
+[2025-05-14 20:07:58.669209] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ea0ac7fc6.png
+[2025-05-14 20:07:58.669209] Lecture de l'image...
+[2025-05-14 20:07:58.670202] Prétraitement...
+[2025-05-14 20:07:58.670202] Chargement du modèle...
+[2025-05-14 20:07:58.822984] Prédiction...
+[2025-05-14 20:07:58.979046] Résultat: {'text': 'أت'}
+[2025-05-14 20:07:58.979046] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:07:58.989794] ERREUR: NameError: name 'prediction_text' is not defined
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\web/recognize.py", line 65, in <module>
+    result = {"text": prediction_text}  # exemple : prediction_text = "أت"
+                      ^^^^^^^^^^^^^^^
+NameError: name 'prediction_text' is not defined
+
+[2025-05-14 20:08:50.048475] === Démarrage du script ===
+[2025-05-14 20:08:50.048475] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ea41f0519.png']
+[2025-05-14 20:08:50.048475] Importation des bibliothèques...
+[2025-05-14 20:08:53.845998] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ea41f0519.png
+[2025-05-14 20:08:53.845998] Lecture de l'image...
+[2025-05-14 20:08:53.855079] Prétraitement...
+[2025-05-14 20:08:53.855079] Chargement du modèle...
+[2025-05-14 20:08:54.023224] Prédiction...
+[2025-05-14 20:08:54.190151] Résultat: {'text': 'أت'}
+[2025-05-14 20:08:54.190151] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:11:12.255625] === Démarrage du script ===
+[2025-05-14 20:11:12.255625] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ead02d0a0.png']
+[2025-05-14 20:11:12.255625] Importation des bibliothèques...
+[2025-05-14 20:11:16.100825] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ead02d0a0.png
+[2025-05-14 20:11:16.100825] Lecture de l'image...
+[2025-05-14 20:11:16.100825] Prétraitement...
+[2025-05-14 20:11:16.100825] Chargement du modèle...
+[2025-05-14 20:11:16.227635] Prédiction...
+[2025-05-14 20:11:16.370917] Résultat: {'text': 'أت'}
+[2025-05-14 20:11:16.370917] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:11:30.506249] === Démarrage du script ===
+[2025-05-14 20:11:30.506249] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824eae26ea42.png']
+[2025-05-14 20:11:30.506249] Importation des bibliothèques...
+[2025-05-14 20:11:33.825849] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824eae26ea42.png
+[2025-05-14 20:11:33.825849] Lecture de l'image...
+[2025-05-14 20:11:33.825849] Prétraitement...
+[2025-05-14 20:11:33.825849] Chargement du modèle...
+[2025-05-14 20:11:33.953495] Prédiction...
+[2025-05-14 20:11:34.096114] Résultat: {'text': 'أت'}
+[2025-05-14 20:11:34.096114] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:13:23.339240] === Démarrage du script ===
+[2025-05-14 20:13:23.339240] Arguments: ['recognize.py', 'D:/xampp/htdocs/web/uploads/ton_image.png']
+[2025-05-14 20:13:23.339240] Importation des bibliothèques...
+[2025-05-14 20:13:23.339240] ERREUR: ModuleNotFoundError: No module named 'cv2'
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\web\recognize.py", line 19, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+[2025-05-14 20:13:45.746266] === Démarrage du script ===
+[2025-05-14 20:13:45.746266] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824eb69a6b3f.png']
+[2025-05-14 20:13:45.746266] Importation des bibliothèques...
+[2025-05-14 20:13:49.600036] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824eb69a6b3f.png
+[2025-05-14 20:13:49.600036] Lecture de l'image...
+[2025-05-14 20:13:49.600036] Prétraitement...
+[2025-05-14 20:13:49.600036] Chargement du modèle...
+[2025-05-14 20:13:49.755741] Prédiction...
+[2025-05-14 20:13:49.889017] Résultat: {'text': 'أت'}
+[2025-05-14 20:13:49.889017] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:13:49.910782] ERREUR: UnicodeEncodeError: 'charmap' codec can't encode characters in position 10-11: character maps to <undefined>
+Traceback (most recent call last):
+  File "D:\xampp\htdocs\web/recognize.py", line 62, in <module>
+    print(json.dumps(result, ensure_ascii=False))
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 10-11: character maps to <undefined>
+
+[2025-05-14 20:14:39.603659] === Démarrage du script ===
+[2025-05-14 20:14:39.603659] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824eb9f82fc0.png']
+[2025-05-14 20:14:39.603659] Importation des bibliothèques...
+[2025-05-14 20:14:42.920779] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824eb9f82fc0.png
+[2025-05-14 20:14:42.920779] Lecture de l'image...
+[2025-05-14 20:14:42.920779] Prétraitement...
+[2025-05-14 20:14:42.920779] Chargement du modèle...
+[2025-05-14 20:14:43.062959] Prédiction...
+[2025-05-14 20:14:43.204532] Résultat: {'text': 'أت'}
+[2025-05-14 20:14:43.204532] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:20:04.349208] === Démarrage du script ===
+[2025-05-14 20:20:04.349208] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ece4448f9.png']
+[2025-05-14 20:20:04.349208] Importation des bibliothèques...
+[2025-05-14 20:20:07.834243] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ece4448f9.png
+[2025-05-14 20:20:07.834243] Lecture de l'image...
+[2025-05-14 20:20:07.834243] Prétraitement...
+[2025-05-14 20:20:07.834243] Chargement du modèle...
+[2025-05-14 20:20:07.976612] Prédiction...
+[2025-05-14 20:20:08.123258] Résultat: {'text': 'أت'}
+[2025-05-14 20:20:08.123258] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:21:09.548591] === Démarrage du script ===
+[2025-05-14 20:21:09.548591] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ed2576050.png']
+[2025-05-14 20:21:09.548591] Importation des bibliothèques...
+[2025-05-14 20:21:12.915130] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ed2576050.png
+[2025-05-14 20:21:12.915130] Lecture de l'image...
+[2025-05-14 20:21:12.915130] Prétraitement...
+[2025-05-14 20:21:12.915130] Chargement du modèle...
+[2025-05-14 20:21:13.060405] Prédiction...
+[2025-05-14 20:21:13.185926] Résultat: {'text': 'بد'}
+[2025-05-14 20:21:13.185926] Texte prédit: بد (<class 'numpy.str_'>)
+[2025-05-14 20:24:46.636698] === Démarrage du script ===
+[2025-05-14 20:24:46.637721] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824edfe7a995.png']
+[2025-05-14 20:24:46.637721] Importation des bibliothèques...
+[2025-05-14 20:24:51.853064] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824edfe7a995.png
+[2025-05-14 20:24:51.853064] Lecture de l'image...
+[2025-05-14 20:24:51.853064] Prétraitement...
+[2025-05-14 20:24:51.853064] Chargement du modèle...
+[2025-05-14 20:24:52.058601] Prédiction...
+[2025-05-14 20:24:52.250412] Résultat: {'text': 'أت'}
+[2025-05-14 20:24:52.250412] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-14 20:25:22.588847] === Démarrage du script ===
+[2025-05-14 20:25:22.588847] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6824ee2278900.png']
+[2025-05-14 20:25:22.588847] Importation des bibliothèques...
+[2025-05-14 20:25:27.406303] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6824ee2278900.png
+[2025-05-14 20:25:27.406303] Lecture de l'image...
+[2025-05-14 20:25:27.406303] Prétraitement...
+[2025-05-14 20:25:27.406303] Chargement du modèle...
+[2025-05-14 20:25:27.596861] Prédiction...
+[2025-05-14 20:25:27.818188] Résultat: {'text': 'ء'}
+[2025-05-14 20:25:27.818188] Texte prédit: ء (<class 'numpy.str_'>)
+[2025-05-15 00:17:51.827866] === Démarrage du script ===
+[2025-05-15 00:17:51.831268] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6825249f99fa9.png']
+[2025-05-15 00:17:51.831268] Importation des bibliothèques...
+[2025-05-15 00:18:05.404504] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6825249f99fa9.png
+[2025-05-15 00:18:05.404504] Lecture de l'image...
+[2025-05-15 00:18:05.420193] Prétraitement...
+[2025-05-15 00:18:05.420193] Chargement du modèle...
+[2025-05-15 00:18:05.784380] Prédiction...
+[2025-05-15 00:18:06.336185] Résultat: {'text': 'عفيف'}
+[2025-05-15 00:18:06.336185] Texte prédit: عفيف (<class 'numpy.str_'>)
+[2025-05-15 21:55:36.999118] === Démarrage du script ===
+[2025-05-15 21:55:37.006672] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_682654c89dab5.png']
+[2025-05-15 21:55:37.006995] Importation des bibliothèques...
+[2025-05-15 21:56:00.554217] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_682654c89dab5.png
+[2025-05-15 21:56:00.554217] Lecture de l'image...
+[2025-05-15 21:56:00.556237] Prétraitement...
+[2025-05-15 21:56:00.570112] Chargement du modèle...
+[2025-05-15 21:56:01.338627] Prédiction...
+[2025-05-15 21:56:02.201398] Résultat: {'text': 'أت'}
+[2025-05-15 21:56:02.201398] Texte prédit: أت (<class 'numpy.str_'>)
+[2025-05-16 08:18:38.447902] === Démarrage du script ===
+[2025-05-16 08:18:38.447902] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6826e6ce1070d.png']
+[2025-05-16 08:18:38.447902] Importation des bibliothèques...
+[2025-05-16 08:18:54.139441] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6826e6ce1070d.png
+[2025-05-16 08:18:54.139441] Lecture de l'image...
+[2025-05-16 08:18:54.153928] Prétraitement...
+[2025-05-16 08:18:54.153928] Chargement du modèle...
+[2025-05-16 08:18:54.873644] Prédiction...
+[2025-05-16 08:18:55.717218] Résultat: {'text': 'ء'}
+[2025-05-16 08:18:55.717218] Texte prédit: ء (<class 'numpy.str_'>)
+[2025-05-17 13:25:27.628905] === Démarrage du script ===
+[2025-05-17 13:25:27.628905] Arguments: ['D:\\xampp\\htdocs\\web/recognize.py', 'D:\\xampp\\htdocs\\web/uploads/img_6828803740d2e.png']
+[2025-05-17 13:25:27.628905] Importation des bibliothèques...
+[2025-05-17 13:25:49.790454] Traitement de l'image: D:\xampp\htdocs\web/uploads/img_6828803740d2e.png
+[2025-05-17 13:25:49.790454] Lecture de l'image...
+[2025-05-17 13:25:49.795139] Prétraitement...
+[2025-05-17 13:25:49.806243] Chargement du modèle...
+[2025-05-17 13:25:50.502358] Prédiction...
+[2025-05-17 13:25:51.343337] Résultat: {'text': 'أت'}
+[2025-05-17 13:25:51.343337] Texte prédit: أت (<class 'numpy.str_'>)
